@@ -43,7 +43,7 @@ jobs:
       with:
         go-version-file: go.mod
         # Adds cache to speed up runs
-        cache: true 
+        cache: true  
       
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
