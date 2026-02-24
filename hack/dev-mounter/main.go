@@ -49,6 +49,7 @@ func newCommand() *cobra.Command {
 				cmNameToPath[parts[0]] = parts[1]
 			}
 
+			// Test commit
 			handledConfigMap := func(obj any) {
 				cm, ok := obj.(*corev1.ConfigMap)
 				if !ok {
