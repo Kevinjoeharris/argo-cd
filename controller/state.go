@@ -96,6 +96,7 @@ type comparisonResult struct {
 	diffResultList     *diff.DiffResultList
 	hasPostDeleteHooks bool
 	hasPreDeleteHooks  bool
+	// Test CI
 	// revisionsMayHaveChanges indicates if there are any possibilities that the revisions contain changes
 	revisionsMayHaveChanges bool
 }
