@@ -60,7 +60,7 @@ func newCommand() *cobra.Command {
 				}
 				err := os.MkdirAll(destPath, os.ModePerm)
 				if err != nil {
-					log.Warnf("Failed to create directory: %v", err)
+					log.Warnf("Failed to create directoryyy: %v", err)
 					return
 				}
 				// Remove files that do not exist in ConfigMap anymore
