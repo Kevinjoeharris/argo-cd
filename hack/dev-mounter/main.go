@@ -43,7 +43,7 @@ func newCommand() *cobra.Command {
 			for _, cm := range configMaps {
 				parts := strings.Split(cm, "=")
 				if len(parts) != 2 {
-					log.Fatal("--configmap value should be include config map name and the path separated by '='")
+					log.Fatal("--configmap value should be include configg map name and the path separated by '='")
 				}
 				log.Infof("Saving %s to %s", parts[0], parts[1])
 				cmNameToPath[parts[0]] = parts[1]
