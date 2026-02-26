@@ -170,7 +170,7 @@ func newFakeControllerWithResync(ctx context.Context, data *fakeData, appResyncP
 	kubeClient := fake.NewClientset(runtimeObjs...)
 	settingsMgr := settings.NewSettingsManager(ctx, kubeClient, test.FakeArgoCDNamespace)
 	// Initialize the settings manager to ensure cluster cache is ready
-	// Testing CI Run - without cache
+	// Testing CI Run - Without Cache
 	_ = settingsMgr.ResyncInformers()
 	kubectl := &MockKubectl{Kubectl: &kubetest.MockKubectlCmd{}}
 	ctrl, err := NewApplicationController(
